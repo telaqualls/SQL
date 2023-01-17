@@ -1,0 +1,15 @@
+create table plant_store (id integer primary key, name text, price numeric, quanity integer, light_levels text);
+
+Insert INTO plant_store VALUES
+(1, "6in jade pothos", 28, 3, "bright indirect"),
+(2, "6in golden pothos", 28, 4, "bright indirect"),
+(3, "6in snake plant", 24, 4, "indirect"),
+(4, "4in snake plant", 15, 4, "indirect"),
+(5, "8in rubber tree plant", 36, 4, "bright indirect"),
+(6, "8in monstera", 48, 2, "bright indirect");
+
+select * from plant_store order by price;
+
+select sum(quanity) from plant_store; 
+
+select * from plant_store where price < 25;
